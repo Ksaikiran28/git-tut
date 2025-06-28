@@ -1,0 +1,44 @@
+Git and GitHub
+
+Git - Git is a  distributed version control system to track changes in source code in software  development.
+
+GitHub - GitHub is  cloud based platform or remote repository hosting service where you can store , share and work together with others to write the code.
+
+
+GIT CONCEPTS
+
+1. Remote repository - which is on internet
+2. Local repository - which is on your computer
+3. Staging area - where you can add single file to Local repository 
+4. Working Directory - where your code is untracked and you are working on it
+
+
+Working Directory -----> Staging Area ----> Local Repository ----->Remote Repository 
+
+-The untracked files are in Working Directory
+-if we commit the file it will add all files. But instead we want to add single file
+  where Staging Area takes place it will commit a single file
+
+
+
+Steps to add your document on Local and remote repository
+
+1. Go To your Terminal/Cmd
+2. Change the directory to which you want to add.
+3. We need  to initialise to local repo  with command  “git init”
+4. If we want to see the project or file status we need to use “git status”
+5. The to add we need to use command "git add filename" for single file or
+   if you want to add all files then we need to use "git add ."
+6. Then we need to commit all files from Working Directory,Staging Area 
+   to Local Repository we use command "git commit -m "any message"
+7. To commit all files from Local Repository to Remote Repository we need to 
+   go to git hub and create a repo and after that it shows the a command
+   "git remote add origin https://github.com/K/git-tut.git ".
+8. Paste the command in Local Repository to commit all files into Remote Repository
+9. Then we should push the files into Remote Repository we should use command
+   "git push -u origin main" or "git push -u origin master" based on your branch
+10.Then all files are add to GitHub Remote Repository
+
+
+
+

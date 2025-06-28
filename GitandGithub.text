@@ -40,5 +40,87 @@ Steps to add your document on Local and remote repository
 10.Then all files are add to GitHub Remote Repository
 
 
+Branches: main/master
+
+- In Git and GitHub, a branch represents an independent line of development. 
+It allows developers to work on new features, fix bugs, or experiment with ideas 
+without affecting the main codebase (typically the "main" or "master" branch). 
+Branches provide an isolated environment for changes, ensuring that ongoing work 
+doesn't interfere with the stable version of the project. 
+
+- suppose if 10 developers are working on features so they can create the different 
+  branches and if the manager agree the change then the developer will "pull request",
+  if not the merge again and work on it
+
+Merge and pull request in the Branches
+
+- git merge operates locally and merges changes within the local repository. 
+- git pull involves both local and remote operations by fetching and merging remote 
+  changes into the local branch.
+
+The commands for Branches:-
+
+- To jump into different Branches we use checkout the command is "git checkout branch name".
+
+--> to create a branch we use the command " git checkout -b "branch name"
+
+- If You want to check which branch are you there. we use the command "git branch"
+
+
+Suppose you created a file and you added the file to new branch and commited but if
+we push it shows a error  it is not pushed and where should I push either main or copy branch
+"You need set the stream"
+
+--> So, to push into new branch we need to upstream it with the command
+    "git push --set-upstream origin copy"
+    - And the it pushed and it is displayed on GitHub
+    - And if you want to merge it will show on top compare and merge only when you have two or more
+      branches
+    - Then after you need to communicate and conform the request.
+    - Those who are owner of repo  will get a option commit merge.
+    - After that it is merged and displayed on github.
+
+
+Fork in GitHub
+
+--If you have change any feature or anything. Then the project access is not there in your hands.
+-- Then comes Fork where the total repo is created on our github and we get the access and then we 
+   can make changes
+
+
+--> If we want to add the new feature the we need to clone the code to Local repo
+    so from code we need to copy the link
+    - create a folder and add clone of the project and the command is "git clone copied-link"
+    - Make changes and commmit and it not pushed to main repo means the original repo
+    - And then we need to raise a pull request and ask to merge.
+    - If they approve they can merge.
+
+
+Issues in GitHub
+
+--Issues are a quick, easy way to track ideas, enhancements, tasks, notes, or bugs for work
+  on GitHub. You'll get a notification if an issue is assigned to you, when you're mentioned 
+  in a comment, and for each new comment on issues you're following or tagged on.
+
+-- If u want to contribute to an OpenSource project and You find an error and  raised an issue
+   if the owner of the repo want to change then he can merge with your branch
+
+
+Merge Conflicts
+
+--Merge conflicts in GitHub occur when Git can't automatically combine changes from different branches
+  due to overlapping modifications. This often happens when two branches have edited the same lines of code,
+  or when one branch deletes a file that another branch has modified. Resolving these conflicts requires manual 
+  intervention to decide which changes to keep or how to combine them
+
+
+Git pull
+
+--The git pull command is used to fetch and download content from a remote repository and immediately update
+ the local repository to match that content. Merging remote upstream changes into your local repository is a 
+ common task in Git-based collaboration work flows.
+    
+    
+
 
 
